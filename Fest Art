@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .produto {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .produto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .preco {
+      font-size: 1.2em;
+      color: #27ae60;
+      margin: 10px 0;
+    }
+    .botao-comprar {
+      background: #25D366;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .botao-comprar:hover {
+      background: #20bd59;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Catálogo de Produtos</h1>
+    <div class="catalogo">
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/250" alt="Produto 1">
+        <h2>Produto 1</h2>
+        <p class="preco">R$ 99,90</p>
+        <a class="botao-comprar" href="https://wa.me/5599999999999?text=Olá!%20Tenho%20interesse%20no%20Produto%201." target="_blank">Comprar</a>
+      </div>
+
+      <div class="produto">
+        <img src="https://via.placeholder.com/250" alt="Produto 2">
+        <h2>Produto 2</h2>
+        <p class="preco">R$ 149,90</p>
+        <a class="botao-comprar" href="https://wa.me/5599999999999?text=Olá!%20Tenho%20interesse%20no%20Produto%202." target="_blank">Comprar</a>
+      </div>
+
+      <!-- Adicione mais produtos aqui -->
+
+    </div>
+  </div>
+</body>
+</html>
